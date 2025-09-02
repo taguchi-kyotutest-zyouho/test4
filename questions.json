@@ -1,0 +1,32 @@
+[
+  {
+    "question": "IPアドレスは何を識別する番号？",
+    "choices": [
+      {"text": "コンピュータや機器", "img": null},
+      {"text": "ユーザーの名前", "img": null},
+      {"text": "プログラミング言語", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "IPアドレスはネットワーク上の機器を識別するための番号です。"
+  },
+  {
+    "question": "情報を0と1で表現する最小単位は？",
+    "choices": [
+      {"text": "バイト", "img": null},
+      {"text": "ビット", "img": null},
+      {"text": "レコード", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "ビットは0か1の二値で情報を表す最小単位です。"
+  },
+  {
+    "question": "このアイコンは何を表している？",
+    "choices": [
+      {"text": "", "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Globe_icon.svg/1200px-Globe_icon.svg.png"},
+      {"text": "ハードディスク", "img": null},
+      {"text": "プリンター", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "地球アイコンはインターネットを表しています。"
+  }
+]
