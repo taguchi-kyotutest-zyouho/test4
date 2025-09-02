@@ -3,19 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>情報I クイズ（最終版カード風）</title>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap" rel="stylesheet">
+<title>情報I クイズ（明瞭UIカード風）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 body {
-  font-family: 'Baloo 2', cursive;
-  background: linear-gradient(to bottom, #e0f7fa, #fff);
+  font-family: 'Noto Sans JP', 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #eaf2f8, #fff);
   margin: 0;
   padding: 20px;
 }
 h1 {
   text-align: center;
-  color: #333;
+  color: #222;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 .quiz-box {
   max-width: 520px;
@@ -27,24 +28,24 @@ h1 {
   transition: transform 0.2s;
 }
 .quiz-box:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 #question {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: #222;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .choice {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #dbeafe;
+  background: #f0f4ff;
   border: none;
   border-radius: 12px;
-  padding: 16px;
-  margin: 12px 0;
+  padding: 15px;
+  margin: 10px 0;
   width: 100%;
   font-size: 17px;
   font-weight: 500;
@@ -54,14 +55,13 @@ h1 {
   transition: all 0.3s ease;
 }
 .choice:hover {
-  background: #bfdbfe;
-  transform: translateY(-3px);
+  background: #dbe3ff;
+  transform: translateY(-2px);
 }
 .choice img {
   max-width: 80%;
   margin-top: 8px;
   border-radius: 8px;
-  transition: transform 0.3s ease;
 }
 .choice.correct::after {
   content: "✔";
@@ -86,7 +86,6 @@ h1 {
   font-weight: 600;
   font-size: 16px;
   min-height: 22px;
-  transition: all 0.3s ease;
 }
 #progress, #score {
   margin-top: 12px;
@@ -110,7 +109,7 @@ button#nextBtn:hover, button#restartBtn:hover {
 </style>
 </head>
 <body>
-<h1>情報I クイズ（最終版カード風）</h1>
+<h1>情報I クイズ（明瞭UIカード風）</h1>
 <div class="quiz-box">
   <p id="question">ここに問題文</p>
   <div id="choices"></div>
@@ -210,28 +209,4 @@ restartBtn.onclick = () => {
 // サンプルデータ
 quizData = [
   {
-    "question": "IPアドレスは何を識別する番号？",
-    "choices": [
-      {"text":"コンピュータや機器","img":null},
-      {"text":"ユーザーの名前","img":null},
-      {"text":"プログラミング言語","img":null}
-    ],
-    "answer":0,
-    "explanation":"IPアドレスはネットワーク上の機器を識別する番号です。"
-  },
-  {
-    "question": "このアイコンは何を表している？",
-    "choices":[
-      {"text":"","img":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Globe_icon.svg/1200px-Globe_icon.svg.png"},
-      {"text":"ハードディスク","img":null},
-      {"text":"プリンター","img":null}
-    ],
-    "answer":0,
-    "explanation":"地球アイコンはインターネットを表しています。"
-  }
-];
-
-loadQuiz();
-</script>
-</body>
-</html>
+    "questio
